@@ -26,7 +26,7 @@ class Header extends Component {
       <header className='app-header'>
         <h1 className='text-center mt-1' style={{ marginBottom: '-1rem' }} >Dayone</h1>
 
-        <Container fluid>
+        <Container>
           <Row className='text-center mx-2'>
             <Col className='py-4 font-weight-bold' xs='2' style={{ backgroundColor: '#ffb404', color: 'white' }}>Personalize</Col>
             <Col className='py-4 font-weight-bold' xs='2'>Product</Col>
