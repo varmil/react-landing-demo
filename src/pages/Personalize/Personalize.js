@@ -79,7 +79,7 @@ class Personalize extends Component {
 
         {/* 3rd section */}
         <section className='py-5'>
-          <h3 className='text-center mx-4'>パフォーマンス に関与する、6つの悩みに科学的にアプローチします</h3>
+          <h3 className='text-center font-weight-bold mx-4'>パフォーマンス に関与する、6つの悩みに科学的にアプローチします</h3>
           <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
           {/* 6つのアイコン */}
           <Row>
@@ -143,7 +143,7 @@ class Personalize extends Component {
 
         {/* 4th section */}
         <section className='py-5' style={{ minHeight: 600 }}>
-          <h3 className='text-center mx-4'>パーソナライズサプリは、データとフィードバックでより賢く、より精緻に</h3>
+          <h3 className='text-center font-weight-bold mx-4'>パーソナライズサプリは、データとフィードバックでより賢く、より精緻に</h3>
           <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
           <Row>
             <Col className='d-flex justify-content-center align-items-center py-4 ml-sm-auto' sm={{ offset: 0, size: 6 }}>
@@ -184,7 +184,7 @@ class Personalize extends Component {
 
         {/* 6th section */}
         <section className='py-5' style={{ }}>
-          <h3 className='text-center mx-4'>データと確かなユーザー体験で “パフォーマンス” 向上をお助けする</h3>
+          <h3 className='text-center font-weight-bold mx-4'>データと確かなユーザー体験で “パフォーマンス” 向上をお助けする</h3>
           <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
           <div className='d-flex justify-content-center align-items-center py-4 ml-sm-auto' sm={{ offset: 0, size: 6 }}>
             <div style={{ width: '60%' }}>
@@ -203,7 +203,7 @@ class Personalize extends Component {
 
         {/* final section */}
         <section className='py-5' style={{ }}>
-          <h3 className='text-center mx-4'>まずは、サーベイであなただけのパーソナライズサプリをチェック</h3>
+          <h3 className='text-center font-weight-bold mx-4'>まずは、サーベイであなただけのパーソナライズサプリをチェック</h3>
           <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
           <div className='mx-auto mt-3' style={{ width: 300 }}>
             <Button className='w-100 p-3 rounded-0 text-white font-weight-bold' color='warning'>Let's Start</Button>
