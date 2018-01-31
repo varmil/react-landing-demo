@@ -19,6 +19,7 @@ const accentBorderStyle = {
   margin: '0 auto',
 }
 const iconWidth = { width: 100 }
+const smallIconWidth = { width: 85 }
 const approachIconWidth = { height: 100 }
 const supplementsIconStyle = { height: 70 }
 
@@ -26,6 +27,7 @@ class Personalize extends Component {
   render () {
     return (
       <div className='animated fadeIn'>
+        {/* 1st section */}
         <section className='py-5' style={{ height: 600 }}>
           <Row>
             <Col sm={{ offset: 0, size: 6 }} style={{ }}>
@@ -43,8 +45,8 @@ class Personalize extends Component {
               </p>
 
               <div className='mt-5'>
-                <input type='email' className='form-control w-75 rounded-0' placeholder="What's your name ?" />
-                <Button className='mt-3 p-3 rounded-0' color='warning'>Let's Start</Button>
+                <input type='username' className='form-control w-75 rounded-0 py-3' style={{ maxWidth: 500 }} placeholder="What's your name ?" />
+                <Button className='mt-3 py-3 rounded-0 text-white font-weight-bold' style={{ width: 200 }} color='warning'>Let's Start</Button>
               </div>
             </Col>
           </Row>
@@ -52,7 +54,8 @@ class Personalize extends Component {
 
         <hr className='py-0 my-0' />
 
-        <section className='' style={{ padding: '8rem 0' }}>
+        {/* 3 points section */}
+        <section className='' style={{ padding: '7rem 4rem' }}>
           <Row>
             <Col className='text-center ml-sm-auto' sm={{ offset: 0, size: 3 }}>
               <h5>①答える</h5>
@@ -74,6 +77,7 @@ class Personalize extends Component {
 
         <hr className='py-0 my-0' />
 
+        {/* 3rd section */}
         <section className='py-5'>
           <h3 className='text-center mx-4'>パフォーマンス に関与する、6つの悩みに科学的にアプローチします</h3>
           <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
@@ -131,9 +135,79 @@ class Personalize extends Component {
           </Row>
           {/* 詳細ボタン */}
           <div className='mx-auto mt-3' style={{ width: 300 }}>
-            <Button className='w-100 p-3 rounded-0' color='warning'>詳細</Button>
+            <Button className='w-100 p-3 rounded-0 text-white font-weight-bold' color='warning'>詳細</Button>
           </div>
+        </section>
 
+        <hr className='py-0 my-0' />
+
+        {/* 4th section */}
+        <section className='py-5' style={{ minHeight: 600 }}>
+          <h3 className='text-center mx-4'>パーソナライズサプリは、データとフィードバックでより賢く、より精緻に</h3>
+          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <Row>
+            <Col className='d-flex justify-content-center align-items-center py-4 ml-sm-auto' sm={{ offset: 0, size: 6 }}>
+              <div style={{ width: '60%' }}>
+                <p>国内外の学術論文、専門家の知見に基づき、あなたの課題・目標・ライフスタイルに最適化したサプリメントを 10 万通りの組み合わせからご提案します。</p>
+                <p>しかしここで終わりではありません。</p>
+                <p>あなたの定性 / 定量両面におけるフィードバックをもとに独自の AI を活用することで、パーソナライズを精緻化し、より最適なご提案を行います。</p>
+                <p><u>我々は、あなたに最適化し続けるパーソナライズサプリ体験をご提供します。</u></p>
+              </div>
+            </Col>
+            <Col className='text-center mr-sm-auto' sm={{ offset: 0, size: 4 }}>
+              <div className='d-flex flex-column'>
+                <div className=''>
+                  <div className='flex-row'>
+                    <img style={smallIconWidth} className='' src={'img/icons/paper.jpg'} />
+                    <img style={smallIconWidth} className='ml-5' src={'img/icons/expert.jpg'} />
+                  </div>
+                </div>
+                <div className='mt-5'>
+                  <img style={smallIconWidth} className='' src={'img/icons/brain.png'} />
+                </div>
+                <div className='mt-5'>
+                  <img style={smallIconWidth} className='' src={'img/icons/person.png'} />
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </section>
+
+        <hr className='py-0 my-0' />
+
+        {/* 5th section */}
+        <section className='py-0' style={{ }}>
+          <img style={{}} className='img-fluid' src={'img/founder.png'} />
+        </section>
+
+        <hr className='py-0 my-0' />
+
+        {/* 6th section */}
+        <section className='py-5' style={{ }}>
+          <h3 className='text-center mx-4'>データと確かなユーザー体験で “パフォーマンス” 向上をお助けする</h3>
+          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <div className='d-flex justify-content-center align-items-center py-4 ml-sm-auto' sm={{ offset: 0, size: 6 }}>
+            <div style={{ width: '60%' }}>
+              <p>
+                私たちは ”パフォーマンス” を、<br />
+                <b>「健康を基盤として、自分のライフスタイルの価値観に沿った自己実現」と考えています。</b>
+              </p>
+              <p>ある人にとっては “パフォーマンスがよい”とは、短時間で集中して仕事を片付けることかもしれませんし、またある人にとってはストレスなく趣味を謳歌することかもしれません。</p>
+              <p>絶え間なく変化が起こる現代。周りに流さず、自分らしくより良く生きるためには、自身のパフォーマンスと向きあい、恒常的にパフォーマンス発揮することが不可欠です。</p>
+              <p>我々は、データに基づく科学的アプローチと確かなユーザー体験を組み合わせ、最適なユーザーに、最適なモノを、最適なタイミングで提供することで、誰もがパフォーマンスを発揮できる世界を目指します。</p>
+            </div>
+          </div>
+        </section>
+
+        <hr className='py-0 my-0' />
+
+        {/* final section */}
+        <section className='py-5' style={{ }}>
+          <h3 className='text-center mx-4'>まずは、サーベイであなただけのパーソナライズサプリをチェック</h3>
+          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <div className='mx-auto mt-3' style={{ width: 300 }}>
+            <Button className='w-100 p-3 rounded-0 text-white font-weight-bold' color='warning'>Let's Start</Button>
+          </div>
         </section>
 
       </div>
