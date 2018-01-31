@@ -23,16 +23,16 @@ class Header extends Component {
 
   render () {
     return (
-      <header className='app-header'>
+      <header className='app-header sticky-top pb-3' style={{ backgroundColor: 'white' }}>
         <h1 className='text-center mt-1' style={{ marginBottom: '-1rem' }} >Dayone</h1>
 
-        <Container>
+        <Container fluid>
           <Row className='text-center mx-2'>
-            <Col className='py-4 font-weight-bold' xs='2' style={{ backgroundColor: '#ffb404', color: 'white' }}>Personalize</Col>
-            <Col className='py-4 font-weight-bold' xs='2'>Product</Col>
-            <Col className='py-4 font-weight-bold' xs='4'></Col>
-            <Col className='py-4 font-weight-bold' xs='2'>Contact</Col>
-            <Col className='py-4 font-weight-bold' xs='2'>Sign In</Col>
+            <Col className='py-3 font-weight-bold' xs='2' style={{ backgroundColor: '#ffb404', color: 'white' }}>Personalize</Col>
+            <Col className='py-3 font-weight-bold' xs='2'>Product</Col>
+            <Col className='py-3 font-weight-bold' xs='4'></Col>
+            <Col className='py-3 font-weight-bold' xs='2'>Contact</Col>
+            <Col className='py-3 font-weight-bold' xs='2'>Sign In</Col>
           </Row>
         </Container>
       </header>
