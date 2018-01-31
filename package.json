@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://varmil.github.io/react-landing-demo",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.2.0",
