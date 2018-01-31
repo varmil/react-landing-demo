@@ -5,7 +5,7 @@ import {
   Col,
 } from 'reactstrap'
 
-const COLOR_ORANGE = '#ffc107'
+const COLOR_ORANGE = '#e2791a'
 
 const strongSpan = { fontSize: 28, color: COLOR_ORANGE }
 const topImageStyle = {
