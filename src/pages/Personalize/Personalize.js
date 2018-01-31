@@ -20,7 +20,7 @@ const accentBorderStyle = {
 }
 const iconWidth = { width: 100 }
 const smallIconWidth = { width: 85 }
-const approachIconWidth = { height: 100 }
+const approachIconHeight = { height: 120 }
 const supplementsIconStyle = { height: 70 }
 
 class Personalize extends Component {
@@ -55,7 +55,7 @@ class Personalize extends Component {
         <hr className='py-0 my-0' />
 
         {/* 3 points section */}
-        <section className='' style={{ padding: '7rem 4rem' }}>
+        <section className='' style={{ padding: '7rem 5rem' }}>
           <Row>
             <Col className='text-center ml-sm-auto' sm={{ offset: 0, size: 3 }}>
               <h5>①答える</h5>
@@ -84,24 +84,24 @@ class Personalize extends Component {
           {/* 6つのアイコン */}
           <Row>
             <Col className='text-center ml-sm-auto' sm={{ offset: 0, size: 2 }}>
-              <img style={approachIconWidth} className='' src={'img/icons/concentration.png'} />
+              <img style={approachIconHeight} className='' src={'img/icons/concentration.png'} />
             </Col>
             <Col className='text-center' sm={{ offset: 1, size: 2 }}>
-              <img style={approachIconWidth} className='' src={'img/icons/motivation.png'} />
+              <img style={approachIconHeight} className='' src={'img/icons/motivation.png'} />
             </Col>
             <Col className='text-center mr-sm-auto' sm={{ offset: 1, size: 2 }}>
-              <img style={approachIconWidth} className='' src={'img/icons/sleep.png'} />
+              <img style={approachIconHeight} className='' src={'img/icons/sleep.png'} />
             </Col>
           </Row>
           <Row className='mt-2'>
             <Col className='text-center ml-sm-auto' sm={{ offset: 0, size: 2 }}>
-              <img style={approachIconWidth} className='' src={'img/icons/liver.png'} />
+              <img style={approachIconHeight} className='' src={'img/icons/liver.png'} />
             </Col>
             <Col className='text-center' sm={{ offset: 1, size: 2 }}>
-              <img style={approachIconWidth} className='' src={'img/icons/stress.png'} />
+              <img style={approachIconHeight} className='' src={'img/icons/stress.png'} />
             </Col>
             <Col className='text-center mr-sm-auto' sm={{ offset: 1, size: 2 }}>
-              <img style={approachIconWidth} className='' src={'img/icons/immunity.png'} />
+              <img style={approachIconHeight} className='' src={'img/icons/immunity.png'} />
             </Col>
           </Row>
           {/* サプリ説明 */}
