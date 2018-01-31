@@ -1,5 +1,5 @@
 const routes = {
-  '/': 'Home',
+  '/': 'Personalize',
   '/personalize': 'Personalize',
   '/product': 'Product',
 }

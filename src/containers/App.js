@@ -16,8 +16,8 @@ class App extends Component {
           <main className='main'>
             <Container fluid className='px-0'>
               <Switch>
-                <Route path='/personalize' name='Personalize' component={Personalize} />
-                <Redirect from='/' to='/personalize' />
+                <Route path='/' name='Personalize' component={Personalize} />
+                {/* <Redirect from='/' to='/personalize' /> */}
               </Switch>
             </Container>
           </main>
