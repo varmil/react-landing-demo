@@ -14,7 +14,7 @@ const topImageStyle = {
   top: '0%'
 }
 const accentBorderStyle = {
-  borderBottom: `${COLOR_ORANGE} 10px solid`,
+  borderBottom: `${COLOR_ORANGE} 4px solid`,
   width: '8%',
   margin: '0 auto',
 }
