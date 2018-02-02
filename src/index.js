@@ -10,6 +10,7 @@ ReactDOM.render((
   <BrowserRouter>
     <Switch>
       <Route path='/' name='Personalize' component={App} />
+      <Route path='/products' name='Products' component={App} />
     </Switch>
   </BrowserRouter>
 ), document.getElementById('root'))

@@ -1,7 +1,7 @@
 const routes = {
   '/': 'Personalize',
   '/personalize': 'Personalize',
-  '/product': 'Product',
+  '/products': 'Products',
 }
 
 export default routes
