@@ -13,15 +13,37 @@ const topImageStyle = {
   right: '10%',
   top: '0%'
 }
-const accentBorderStyle = {
-  borderBottom: `${COLOR_ORANGE} 4px solid`,
-  width: '8%',
-  margin: '0 auto',
-}
-const iconWidth = { width: 100 }
 const smallIconWidth = { width: 85 }
 const approachIconHeight = { height: 120 }
 const supplementsIconStyle = { height: 70 }
+
+/**
+  Functional Components
+*/
+function SectionTitleAndBorder (props) {
+  const accentBorderStyle = {
+    borderBottom: `${COLOR_ORANGE} 4px solid`,
+    width: '8%',
+    margin: '0 auto',
+  }
+  return (
+    <div>
+      <h3 className='text-center font-weight-bold mx-4'>{props.title}</h3>
+      <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+    </div>
+  )
+}
+
+function HowItWorks (props) {
+  const iconWidth = { width: 100 }
+  return (
+    <div>
+      <h5>{props.title}</h5>
+      <img style={iconWidth} className='' src={props.imgSrc} alt={'How It Works'} />
+      <h6 className='text-left'>{props.text}</h6>
+    </div>
+  )
+}
 
 class Personalize extends Component {
   render () {
@@ -58,19 +80,25 @@ class Personalize extends Component {
         <section className='' style={{ padding: '7rem 5rem' }}>
           <Row>
             <Col className='text-center ml-sm-auto' sm={{ offset: 0, size: 3 }}>
-              <h5>①答える</h5>
-              <img style={iconWidth} className='' src='//images.contentful.com/t9x0u6p47op0/62CHmltDygAQSUCyGmeqOi/eb504725ff00712a80697b57ffaf3bf5/ic_howitworks_survey.gif' />
-              <h6 className='text-left'>課題・目標・ライフスタイルに関する5分程度のサーベイにお答えください。</h6>
+              <HowItWorks
+                title='①答える'
+                imgSrc='//images.contentful.com/t9x0u6p47op0/62CHmltDygAQSUCyGmeqOi/eb504725ff00712a80697b57ffaf3bf5/ic_howitworks_survey.gif'
+                text='課題・目標・ライフスタイルに関する5分程度のサーベイにお答えください。'
+              />
             </Col>
             <Col className='text-center' sm={{ offset: 1, size: 3 }}>
-              <h5>②見る</h5>
-              <img style={iconWidth} className='' src='//images.contentful.com/t9x0u6p47op0/6GPG2xn7WgAeKk8OiceusS/6865fbcd7d7fedbc2f47e996d89ca382/ic_howitworks_recommendations.gif' />
-              <h6 className='text-left'>自分だけのパーソナライズサプリの中身をチェック。効用やエビデンスも確認できます。</h6>
+              <HowItWorks
+                title='②見る'
+                imgSrc='//images.contentful.com/t9x0u6p47op0/6GPG2xn7WgAeKk8OiceusS/6865fbcd7d7fedbc2f47e996d89ca382/ic_howitworks_recommendations.gif'
+                text='自分だけのパーソナライズサプリの中身をチェック。エビデンスも確認できます。'
+              />
             </Col>
             <Col className='text-center mr-sm-auto' sm={{ offset: 1, size: 3 }}>
-              <h5>③受け取る</h5>
-              <img style={iconWidth} className='' src='//images.contentful.com/t9x0u6p47op0/BFzIAWtVokUWWgO8qgQey/37d9dced160d04563df1aeaeac7d9d6b/ic_howitworks_delivery.gif' />
-              <h6 className='text-left'>後は個別包装されたサプリが毎月届くのを待つだけ。もちろんいつでもキャンセルできます。</h6>
+              <HowItWorks
+                title='③受け取る'
+                imgSrc='//images.contentful.com/t9x0u6p47op0/BFzIAWtVokUWWgO8qgQey/37d9dced160d04563df1aeaeac7d9d6b/ic_howitworks_delivery.gif'
+                text='後は個別包装されたサプリが毎月届くのを待つだけ。もちろんいつでもキャンセルできます。'
+              />
             </Col>
           </Row>
         </section>
@@ -79,8 +107,7 @@ class Personalize extends Component {
 
         {/* 3rd section */}
         <section className='py-5'>
-          <h3 className='text-center font-weight-bold mx-4'>パフォーマンス に関与する、6つの悩みに科学的にアプローチします</h3>
-          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <SectionTitleAndBorder title={'パフォーマンス に関与する、6つの悩みに科学的にアプローチします'} />
           {/* 6つのアイコン */}
           <Row>
             <Col className='text-center ml-sm-auto' sm={{ offset: 0, size: 2 }}>
@@ -143,8 +170,7 @@ class Personalize extends Component {
 
         {/* 4th section */}
         <section className='py-5' style={{ minHeight: 600 }}>
-          <h3 className='text-center font-weight-bold mx-4'>パーソナライズサプリは、データとフィードバックでより賢く、より精緻に</h3>
-          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <SectionTitleAndBorder title={'パーソナライズサプリは、データとフィードバックでより賢く、より精緻に'} />
           <Row>
             <Col className='d-flex justify-content-center align-items-center py-4 ml-sm-auto' sm={{ offset: 0, size: 6 }}>
               <div style={{ width: '60%' }}>
@@ -184,13 +210,12 @@ class Personalize extends Component {
 
         {/* 6th section */}
         <section className='py-5' style={{ }}>
-          <h3 className='text-center font-weight-bold mx-4'>データと確かなユーザー体験で “パフォーマンス” 向上をお助けする</h3>
-          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <SectionTitleAndBorder title={'データと確かなユーザー体験で “パフォーマンス” 向上をお助けする'} />
           <div className='d-flex justify-content-center align-items-center py-4 ml-sm-auto' sm={{ offset: 0, size: 6 }}>
             <div style={{ width: '60%' }}>
               <p>
                 私たちは ”パフォーマンス” を、<br />
-                <b>「健康を基盤として、自分のライフスタイルの価値観に沿った自己実現」と考えています。</b>
+                <b>「自分のライフスタイルの価値観に沿った自己実現」と考えています。</b>
               </p>
               <p>ある人にとっては “パフォーマンスがよい”とは、短時間で集中して仕事を片付けることかもしれませんし、またある人にとってはストレスなく趣味を謳歌することかもしれません。</p>
               <p>絶え間なく変化が起こる現代。周りに流さず、自分らしくより良く生きるためには、自身のパフォーマンスと向きあい、恒常的にパフォーマンス発揮することが不可欠です。</p>
@@ -203,8 +228,7 @@ class Personalize extends Component {
 
         {/* final section */}
         <section className='py-5' style={{ }}>
-          <h3 className='text-center font-weight-bold mx-4'>まずは、サーベイであなただけのパーソナライズサプリをチェック</h3>
-          <div className='accent-border mt-3 mb-5' style={accentBorderStyle} />
+          <SectionTitleAndBorder title={'まずは、サーベイであなただけのパーソナライズサプリをチェック'} />
           <div className='mx-auto mt-3' style={{ width: 300 }}>
             <Button className='w-100 p-3 rounded-0 text-white font-weight-bold' color='warning'>Let's Start</Button>
           </div>
