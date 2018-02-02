@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 import {
   Container,
   Row,
@@ -29,8 +30,12 @@ class Header extends Component {
 
         <Container fluid>
           <Row className='text-center mx-2'>
-            <Col className='py-3 font-weight-bold text-white' xs='2' style={{ backgroundColor: COLOR.YELLOW }}>Personalize</Col>
-            <Col className='py-3 font-weight-bold' xs='2'>Product</Col>
+            <Col className='py-3 font-weight-bold text-white' xs='2' style={{ backgroundColor: COLOR.YELLOW }}>
+              <Link to={`/`}>Personalize</Link>
+            </Col>
+            <Col className='py-3 font-weight-bold' xs='2'>
+              <Link to={`/products`}>Products</Link>
+            </Col>
             <Col className='py-3 font-weight-bold' xs='4'></Col>
             <Col className='py-3 font-weight-bold' xs='2'>Contact</Col>
             <Col className='py-3 font-weight-bold' xs='2'>Sign In</Col>
