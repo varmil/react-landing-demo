@@ -4,6 +4,7 @@ import {
   Row,
   Col,
 } from 'reactstrap'
+import COLOR from '../../consts/color'
 
 class Header extends Component {
   sidebarToggle (e) {
@@ -28,7 +29,7 @@ class Header extends Component {
 
         <Container fluid>
           <Row className='text-center mx-2'>
-            <Col className='py-3 font-weight-bold text-white' xs='2' style={{ backgroundColor: '#ffb404' }}>Personalize</Col>
+            <Col className='py-3 font-weight-bold text-white' xs='2' style={{ backgroundColor: COLOR.YELLOW }}>Personalize</Col>
             <Col className='py-3 font-weight-bold' xs='2'>Product</Col>
             <Col className='py-3 font-weight-bold' xs='4'></Col>
             <Col className='py-3 font-weight-bold' xs='2'>Contact</Col>

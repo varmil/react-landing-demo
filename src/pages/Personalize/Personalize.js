@@ -4,10 +4,9 @@ import {
   Row,
   Col,
 } from 'reactstrap'
+import COLOR from '../../consts/color'
 
-const COLOR_ORANGE = '#e2791a'
-
-const strongSpan = { fontSize: 28, color: COLOR_ORANGE }
+const strongSpan = { fontSize: 28, color: COLOR.ORANGE }
 const topImageStyle = {
   position: 'absolute',
   right: '10%',
@@ -22,7 +21,7 @@ const supplementsIconStyle = { height: 70 }
 */
 function SectionTitleAndBorder (props) {
   const accentBorderStyle = {
-    borderBottom: `${COLOR_ORANGE} 4px solid`,
+    borderBottom: `${COLOR.ORANGE} 4px solid`,
     width: '8%',
     margin: '0 auto',
   }
