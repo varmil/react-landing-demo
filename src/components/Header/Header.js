@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import {
   Container,
   Row,
@@ -29,16 +29,20 @@ class Header extends Component {
         <h1 className='text-center mt-1' style={{ marginBottom: '-1rem' }} >Dayone</h1>
 
         <Container fluid>
-          <Row className='text-center mx-2'>
-            <Col className='py-3 font-weight-bold text-white' xs='2' style={{ backgroundColor: COLOR.YELLOW }}>
-              <Link to={`/`}>Personalize</Link>
+          <Row className='text-center font-weight-bold mx-2'>
+            <Col className='px-0' xs='2'>
+              <NavLink exact className='py-3 d-block' activeClassName='active' to={`/`}>Personalize</NavLink>
             </Col>
-            <Col className='py-3 font-weight-bold' xs='2'>
-              <Link to={`/products`}>Products</Link>
+            <Col className='px-0' xs='2'>
+              <NavLink className='py-3 d-block' activeClassName='active' to={`/products`}>Products</NavLink>
             </Col>
-            <Col className='py-3 font-weight-bold' xs='4'></Col>
-            <Col className='py-3 font-weight-bold' xs='2'>Contact</Col>
-            <Col className='py-3 font-weight-bold' xs='2'>Sign In</Col>
+            <Col className='px-0' xs='4'></Col>
+            <Col className='px-0' xs='2'>
+              <NavLink className='py-3 d-block' activeClassName='active' to={`/contact`}>Contact</NavLink>
+            </Col>
+            <Col className='px-0' xs='2'>
+              <NavLink className='py-3 d-block' activeClassName='active' to={`/signin`}>Sign In</NavLink>
+            </Col>
           </Row>
         </Container>
       </header>
