@@ -13,6 +13,7 @@ import FaUserMd from 'react-icons/lib/fa/user-md'
 
 import COLOR from '../../consts/color'
 
+const SECOND_STICKY_HEADER_POS_TOP = 104
 const containerStyle = { maxWidth: 1400 }
 const filterItemColStyle = { minWidth: 115 }
 const filterItemStyle = { minWidth: 115 }
@@ -108,7 +109,7 @@ class Products extends Component {
     return (
       <div className='animated fadeIn'>
         <Container className='mx-auto' style={containerStyle}>
-          <Row className='py-5'>
+          <Row className='py-4 sticky-top bg-white' style={{ top: SECOND_STICKY_HEADER_POS_TOP }}>
             <Col className='px-0 ml-sm-auto ' sm={{ offset: 0, size: 1 }} style={filterItemColStyle}>
               <FilterItem icon={FaThL} text='ALL' />
             </Col>
