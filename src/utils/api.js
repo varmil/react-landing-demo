@@ -4,8 +4,8 @@ export const SHEET_CATEGORIES = 'categories.csv'
 export const SHEET_FILTERS = 'filters.csv'
 
 export function getURL (sheetName) {
-  const SPREADSHEET_ID = '1npoKbMd6JJN7iAIS2s-7WCnqNdcyqjhEZhLtBBiJQ8A'
-  const MY_API_KEY = 'AIzaSyBY4rzvROtViiGVQslJnImGqf_2GuWegd0'
+  const SPREADSHEET_ID = 'aaa'
+  const MY_API_KEY = 'fff'
   return `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${sheetName}?key=${MY_API_KEY}`
 }
 
